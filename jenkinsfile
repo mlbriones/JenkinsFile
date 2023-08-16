@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Eras') {
+        stage('Run Eras') {
             steps {
-                echo 'Deploying....'
+                build job: 'Eras'
             }
         }
     }
